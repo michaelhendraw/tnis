@@ -1,0 +1,5 @@
+/tnis-auth/micin/config/app.toml
+/tnis-customer/micin/config/app.toml
+/tnis-gateway/micin/config/app.toml
+/tnis-notif/micin/config/app.toml
+/tnis-transaction/micin/config/app.toml
