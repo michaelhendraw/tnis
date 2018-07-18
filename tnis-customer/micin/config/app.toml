@@ -1,0 +1,18 @@
+env = "local"
+
+[local]
+# setting
+port = "RhLr8YFV0Pq_Wju4pzmvg0or21Nb"
+# database
+mysql_host = "RbNBqHuGDnbFlImMtezyzvTyKD1guTkDr239AAjMqFrpXvA="
+mysql_user = "lfPzSZkAcKyghc_9CHj_JkrWshI="
+mysql_password = "qti8YwkOQncXLPy3rvZCQQ=="
+mysql_database = "M_W_ZzhlTb8HjhX93KDrIphYxdM="
+# elastic
+elastic_host = "xywEwNOVSTaNOD6KXcsVhpPC83UAwtvljm8mlN3VysPInTjMcmt0o3ch"
+elastic_indice_customer = "_RSJ_nJIhn0iuxS6WKU2pcMY6Myh3i4oM-9jng0="
+elastic_indice_token = "fcogI7RoKCcY_faO03TW6ZJvE3UiM5QNDr0="
+
+[development]
+
+[production]

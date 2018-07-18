@@ -1,0 +1,85 @@
+{
+  "mappings": {
+    "data_type": {
+      "dynamic": "strict",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "account_number": {
+          "type": "string"
+        },
+        "identity_card": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "birth_date": {
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phone_number": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "created_by": {
+          "type": "integer"
+        },
+        "updated_at": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "updated_by": {
+          "type": "integer"
+        },
+        "total": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "settings": {
+    "index": {
+      "number_of_shards": 5,
+      "number_of_replicas": 0
+    },
+    "analysis": {
+      "filter": {
+        "stopwords_filter": {
+          "type": "stop",
+          "stopwords": [
+            "http",
+            "https",
+            "ftp",
+            "www"
+          ]
+        }
+      },
+      "analyzer": {
+        "lowercase_with_stopwords": {
+          "type": "custom",
+          "tokenizer": "lowercase",
+          "filter": [
+            "stopwords_filter"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "mappings": {
+    "data_type": {
+      "dynamic": "strict",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "user": {
+          "dynamic": "strict",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "client": {
+          "dynamic": "strict",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "key": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "created_at": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "valid_until": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "settings": {
+    "index": {
+      "number_of_shards": 5,
+      "number_of_replicas": 0
+    },
+    "analysis": {
+      "filter": {
+        "stopwords_filter": {
+          "type": "stop",
+          "stopwords": [
+            "http",
+            "https",
+            "ftp",
+            "www"
+          ]
+        }
+      },
+      "analyzer": {
+        "lowercase_with_stopwords": {
+          "type": "custom",
+          "tokenizer": "lowercase",
+          "filter": [
+            "stopwords_filter"
+          ]
+        }
+      }
+    }
+  }
+}
