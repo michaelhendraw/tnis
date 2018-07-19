@@ -14,8 +14,8 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/olivere/elastic"
 
-	"tnis-auth/micin/app/version_1_0_0/model"
-	"tnis-auth/micin/config"
+	"tnis/tnis-auth/micin/app/version_1_0_0/model"
+	"tnis/tnis-auth/micin/config"
 )
 
 func AuthGetToken(w http.ResponseWriter, r *http.Request, db *sql.DB, es *elastic.Client) {

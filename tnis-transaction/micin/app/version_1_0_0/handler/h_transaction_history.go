@@ -13,8 +13,8 @@ import (
 	"github.com/olivere/elastic"
 	"github.com/spf13/cast"
 
-	"tnis-transaction/micin/app/version_1_0_0/model"
-	"tnis-transaction/micin/config"
+	"tnis/tnis-transaction/micin/app/version_1_0_0/model"
+	"tnis/tnis-transaction/micin/config"
 )
 
 func TransactionHistory(w http.ResponseWriter, r *http.Request, db *sql.DB, es *elastic.Client) {

@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"tnis-notif/micin/app"
-	"tnis-notif/micin/config"
+	"tnis/tnis-notif/micin/app"
+	"tnis/tnis-notif/micin/config"
 )
 
 func main() {

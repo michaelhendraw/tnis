@@ -12,8 +12,8 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/olivere/elastic"
 
-	"tnis-transaction/micin/app/version_1_0_0/model"
-	"tnis-transaction/micin/config"
+	"tnis/tnis-transaction/micin/app/version_1_0_0/model"
+	"tnis/tnis-transaction/micin/config"
 )
 
 func TransactionBalance(w http.ResponseWriter, r *http.Request, db *sql.DB, es *elastic.Client) {

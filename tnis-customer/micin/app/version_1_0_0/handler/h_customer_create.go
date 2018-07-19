@@ -11,8 +11,8 @@ import (
 	"github.com/olivere/elastic"
 	"github.com/spf13/cast"
 
-	"tnis-customer/micin/app/version_1_0_0/model"
-	"tnis-customer/micin/config"
+	"tnis/tnis-customer/micin/app/version_1_0_0/model"
+	"tnis/tnis-customer/micin/config"
 )
 
 func CustomerCreate(w http.ResponseWriter, r *http.Request, db *sql.DB, es *elastic.Client) {

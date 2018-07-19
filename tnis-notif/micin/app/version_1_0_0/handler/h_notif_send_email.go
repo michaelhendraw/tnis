@@ -16,8 +16,8 @@ import (
 	"github.com/sendgrid/sendgrid-go/helpers/mail"
 	"github.com/spf13/cast"
 
-	"tnis-notif/micin/app/version_1_0_0/model"
-	"tnis-notif/micin/config"
+	"tnis/tnis-notif/micin/app/version_1_0_0/model"
+	"tnis/tnis-notif/micin/config"
 )
 
 func NotifSendEmail(w http.ResponseWriter, r *http.Request, db *sql.DB, es *elastic.Client) {

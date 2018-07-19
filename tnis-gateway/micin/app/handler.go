@@ -21,7 +21,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/olivere/elastic"
 
-	"tnis-gateway/micin/config"
+	"tnis/tnis-gateway/micin/config"
 )
 
 // Versioning (Versi Client : Versi API)

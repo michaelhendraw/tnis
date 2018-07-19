@@ -35,12 +35,6 @@ c) /transaction/balance: view latest customer balance
 5. tnis-notif: api to send email notification
 a) /notif/send_email: send email after transaction saving or withdrawing customer money successfully (auto called after /transaction/save)
 
-Keterangan:
-Untuk .sql dan gambaran ERD terlampir pada folder note
-Untuk mapping elasticsearch ada pada link postman berikut https://www.getpostman.com/collections/5a0b0beb223f72aa6b53
-Untuk mendapatkan app.toml kontak email michaelhendraw@gmail.com
-app.toml diletakkan pada setiap folder tnis-.../micin/config
-
 Information:
 For .sql and ERD's picture attached to notes folder
 For elasticsearch mapping and endpoint is on the following postman link https://www.getpostman.com/collections/5a0b0beb223f72aa6b53

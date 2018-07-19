@@ -8,7 +8,7 @@ import (
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 
-	"tnis-gateway/micin/config"
+	"tnis/tnis-gateway/micin/config"
 )
 
 func (a *App) Initialize(config *config.Config) {

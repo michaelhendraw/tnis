@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"tnis-gateway/micin/app"
-	"tnis-gateway/micin/config"
+	"tnis/tnis-gateway/micin/app"
+	"tnis/tnis-gateway/micin/config"
 )
 
 func main() {

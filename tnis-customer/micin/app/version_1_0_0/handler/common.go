@@ -20,8 +20,8 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/olivere/elastic"
 
-	"tnis-customer/micin/app/version_1_0_0/model"
-	"tnis-customer/micin/config"
+	"tnis/tnis-customer/micin/app/version_1_0_0/model"
+	"tnis/tnis-customer/micin/config"
 )
 
 // Status Code

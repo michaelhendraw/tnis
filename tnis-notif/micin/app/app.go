@@ -12,8 +12,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/olivere/elastic"
 
-	handler100 "tnis-notif/micin/app/version_1_0_0/handler"
-	"tnis-notif/micin/config"
+	handler100 "tnis/tnis-notif/micin/app/version_1_0_0/handler"
+	"tnis/tnis-notif/micin/config"
 )
 
 func (a *App) Initialize(config *config.Config) {
